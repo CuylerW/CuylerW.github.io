@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Main Page</title>
+	<title>Menu Page</title>
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 
@@ -31,8 +31,20 @@
 		</div>
 		<div class="clear"></div>
 		<hr>
-		<h1>Welcome to Pano's Pizza!!</h1>
-		<p> At Pano's Pizza, we are commited to creating quality pizzas for cheap prices. We are also focused on making your experience dining with us as enjoyable as possible and delivery as easy and fast as possible. We hope you enjoy your meal!!.</p>
+		<div class="content">
+			<h1>Pizzas</h1>
+			<div id="pizzaDiv">
+			</div>
+
+			<h1>Desserts</h1>
+			<div id="dessertDiv">
+			</div>
+
+			<h1>Drinks</h1>
+			<div id="drinkDiv">
+			</div>
+		</div>
+		<div class="clear"> </div>
 		<br>
 		<hr>
 		<div id="footer">
@@ -51,6 +63,7 @@
 </body>
 <script type="text/javascript" src="./js/cartClient.js"></script>
 <script type="text/javascript">
-	document.getElementById("numItems").innerHTML = localStorage.getItem("number");
+	showMenu();
+	registerButtonEvents();
 </script>
 </html>
