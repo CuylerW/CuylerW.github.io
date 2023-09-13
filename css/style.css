@@ -1,29 +1,53 @@
 p {
-	font-size: 1.2em; /* 1.2 times larger than the current default size*/
+	font-size: 2em; /* 1.2 times larger than the current default size*/
+	font-family: Didot, serif;
 	margin: 10px;
 	color: black;
 }
 
 
 .page {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 
-#header .logo {
-	margin-right: 150px;
-	margin-left: 50px;
-	height: 100px;
-	width: 100px;
-	float: left;
+#header {
+	font-size: 15pt;
+	
+	position: relative;
+	top: 0px;
+	height: 300px;	
+	background-image: url("../images/blue_sand.jpg");
+	background-color: blue;
+	background-size: cover;
+	display: grid;
 }
 
-#footer .logo {
+#header ul {
+	display: inline;
+	float:right;
 	margin-right: 50px;
-	margin-left: 50px;
-	height: 75px;
-	width: 75px;
+}
+
+#header li {
+	display: inline;
 	float: left;
+	margin-right: 50px;
+	padding-top: 30px;
+}
+
+#header a {
+	color: white;
+	text-decoration: grey;
+}
+
+#header p {
+	margin: auto;
+	text-align: center;
+	display: table-cell;  
+	font-size: 4em;
+	color: white;
+	
 }
 
 .cart {
@@ -40,11 +64,23 @@ p {
 	padding: 10px;
 }
 
-#header {
-	font-size: 2em;
-	position: relative;
-	top: 20px;
-	height: 120px;	
+.column {
+	width: 50%;
+	float: left;
+	text-align: center;
+	display: block;
+}
+
+.right {
+	text-align: left;
+	padding: 10px;
+	padding-right:  300px;
+}
+
+.left {
+	text-align: left;
+	padding: 10px;
+	padding-left:  300px;
 }
 
 .column3 {
@@ -63,21 +99,6 @@ p {
 	clear: both;
 }
 
-#header ul {
-	display: inline;
-}
-
-#header li {
-	display: inline;
-	float: left;
-	margin-right: 70px;
-	padding-top: 30px;
-}
-
-#header a {
-	color: red;
-	text-decoration: none;
-}
 
 #footer ul {
 	display: inline;
@@ -91,7 +112,7 @@ p {
 }
 
 #footer a {
-	color: red;
+	color: grey;
 	text-decoration: none;
 }
 
