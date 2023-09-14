@@ -1,19 +1,12 @@
-p {
-	font-size: 2em; /* 1.2 times larger than the current default size*/
-	font-family: Didot, serif;
-	margin: 10px;
-	color: black;
-}
-
-
 .page {
 	width: 100%;
 	margin: auto;
+	font-family: Lato;
+	color: black;
 }
 
 #header {
 	font-size: 15pt;
-	
 	position: relative;
 	top: 0px;
 	height: 300px;	
@@ -77,27 +70,44 @@ p {
 	padding: 50px;
 }
 
+p {
+	font-size: 2em; 
+	margin: 10px;
+}
+
+#TeachingBody {
+	padding: 40px;
+	padding-left: 200px;
+}
+
+#TeachingBody a {
+	font-size: 2em;
+	text-decoration: underline;
+	color: rgb(68, 143, 230);
+}
+
+#TeachingBody li {
+	font-size: 1.5em;
+}
+
+#ProgrammingBody {
+	padding: 40px;
+	padding-left: 200px;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+
+
 
 .clear {
 	clear: both;
 }
 
 
-#footer ul {
-	display: inline;
-}
-
-#footer li {
-	display: inline;
-	float: left;
-	margin-right: 30px;
-	padding-top: 30px;
-}
-
-#footer a {
-	color: grey;
-	text-decoration: none;
-}
 
 .orderButton {
 	border-color: red;
