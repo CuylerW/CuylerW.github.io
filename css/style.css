@@ -50,25 +50,12 @@ p {
 	
 }
 
-.cart {
-	height: 60px;
-	width: 60px;
-	float: right;
-	margin-right: 10px;
-}
-
-.pizza {
-	height: 250px;
-	width: 250px;
-	float: center;
-	padding: 10px;
-}
-
 .column {
 	width: 50%;
 	float: left;
 	text-align: center;
 	display: block;
+	position: relative;
 }
 
 .right {
@@ -83,15 +70,11 @@ p {
 	padding-left:  300px;
 }
 
-.column3 {
-	width: 33%;
-	float: left;
+#youtube {
 	text-align: center;
-}
-
-.column4 {
-	width: 25%;
-	float: left;
+	clear: both;
+	width: 100%;
+	padding: 50px;
 }
 
 
