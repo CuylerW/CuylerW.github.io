@@ -19,6 +19,8 @@
         <meta charset="utf-8"> 
     
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+        <script src="./js/functions.js"></script>
     
     </head>
 <body>
@@ -42,9 +44,39 @@
 
             <br><br>
 
-            <span class="heading">8 - Puzzle Game</span>
-            <p>This 8 - Puzzle Game was designed as the final project in my second Java course during my computer science minor. It was originally designed to receive input from Phidget touch sensors which were arrayed in a 3x3 grid. The user would touch the cell corresponding to which tile they would like to slide into the empty space. On completing the puzzle, 
-            </p>
+            <div class="tab">
+                <button class="tablinks" onclick="openProject(event, '8 - Puzzle Game')">8 - Puzzle Game</button>
+                <button class="tablinks" onclick="openProject(event, 'Jeopardy')">Jeopardy</button>
+                <button class="tablinks" onclick="openProject(event, 'Encrypt It')">Encrypt It</button>
+            </div>
+
+            <div id="8 - Puzzle Game" class="tabcontent">
+                <span class="heading">8 - Puzzle Game</span>
+                <p style="font-size: 1.5em">This 8 - Puzzle Game was designed as the final project in my second Java course during my computer science minor. It was originally designed to receive input from Phidget touch sensors which were arrayed in a 3x3 grid. The user would touch the cell corresponding to which tile they would like to slide into the empty space and it would move. It also works by using the mouse to click on the tile. The game has three levels of difficulty and also assigns a score to each complete attempt based on time of completion and the number of clicks. The code can be accessed on my github <a href="https://github.com/CuylerW/8-PuzzleGame.git">here</a>.</p>
+                    <br>
+                    <br>
+                    <p style="font-size: 1.5em">This is what a new game looks like. The tiles have been scrambled and the timer has started running and updating the score.</p>
+                    <img src="images/8PuzzlePic1.png" heigth="1000px" width="1000px" style="width: 60%; display: block; margin-left: auto; margin-right: auto;">  
+                    <br>
+                    <br>   
+                    <p style="font-size: 1.5em">Once you have completed the puzzle, the game will compare your score with the high score file and notify you if you scored in the top 5.</p>
+                    <img src="images/8PuzzlePic2.png" heigth="1000px" width="1000px" style="width: 60%; display: block; margin-left: auto; margin-right: auto;">
+            </div>
+           
+            <div id="Jeopardy" class="tabcontent">
+                <span class="heading">Jeopardy</span>
+                <p style="font-size: 1.5em">This Jeopardy program was written as a means of playing trivia games with my family during the COVID-19 lockdown. It is written in Python. The program loads a Jeopardy game by reading data such as questions, answers, topics, etc. from a text file written in a certain format. You can specify any number of topics (columns) and any number of questions (rows) and you can assign questions to be daily doubles or not. The program will ask for how many users and allow you to assign names to the contestants. When a question is selected, the question displays but does not show the answer. The host can choose to allow the fastest person to answer or to allow all contestants to suggest an answer. Once the host has received potential answers, they can click to show the answer, and then award the points to those that got the question right. The program will keep track of the points as the game goes on. There is also the option of having a final jeopardy question whereby the contestants can wager their points. After this question, the person with the most points is announced as the winner. it can be accessed on github <a href="https://github.com/CuylerW/Jeopardy.git">here</a>.</p>
+            </div>
+           
+
+            <div id="Encrypt It" class="tabcontent">
+                <span class="heading">Encrypt It</span>
+                <p style="font-size: 1.5em">Encrypt It is an iOS application I created as the final project in my Mobile App Development course in undergraduate school. The app would take any message and encrypt it via an Affine Cipher. You could then send the encrypted message to your friend and they could use the app to decrypt the message back into its original form. Unfortunately, I have lost the code for this program; however, below are some photos.</p>
+                    <br>
+                <div style="display: block; margin-left: auto; margin-right: auto;">
+                    <img src="images/EncryptItEnc.png" heigth="1000px" width="250px"">     <img src="images/EncryptItDec.png" heigth="1000px" width="250px">
+                </div>
+            </div>
         </div>
     </div>
     <div class="clear"></div>
